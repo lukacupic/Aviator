@@ -1,4 +1,4 @@
-package com.github.lukacupic.opensky;
+package com.github.lukacupic.openskydemo;
 
 import org.opensky.api.OpenSkyApi;
 import org.opensky.model.StateVector;

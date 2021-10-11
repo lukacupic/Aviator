@@ -1,4 +1,4 @@
-package com.github.lukacupic.opensky;
+package com.github.lukacupic.openskydemo;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
