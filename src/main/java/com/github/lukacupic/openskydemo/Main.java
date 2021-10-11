@@ -21,7 +21,13 @@ public class Main {
 
         OpenSkyApi api = new OpenSkyApi(cc.getCredential(Credential.OPENSKY_USERNAME), cc.getCredential(Credential.OPENSKY_PASSWORD));
 
-        OpenSkyApi.BoundingBox box = new OpenSkyApi.BoundingBox(44.763312, 45.501534, 13.491211, 14.275360);
+        double latitude1 = Double.parseDouble(cc.getCredential(Credential.BOTTOM_LEFT_LATITUDE));
+        double longitude1 = Double.parseDouble(cc.getCredential(Credential.TOP_RIGHT_LATITUDE));
+
+        double latitude2 = Double.parseDouble(cc.getCredential(Credential.BOTTOM_LEFT_LATITUDE));
+        double longitude2 = Double.parseDouble(cc.getCredential(Credential.TOP_RIGHT_LONGITUDE));
+
+        OpenSkyApi.BoundingBox box = new OpenSkyApi.BoundingBox(latitude1, longitude1, latitude2, longitude2);
 
         while (true) {
             Collection<StateVector> states = api.getStates(0, null, box).getStates();

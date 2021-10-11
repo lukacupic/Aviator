@@ -12,7 +12,7 @@ public class CredentialsConfig {
     private static final String FILE = "credentials.config";
     private static final Credential[] CREDENTIALS = com.github.lukacupic.openskydemo.Credential.values();
 
-    private Map<String, String> map;
+    private final Map<String, String> map;
 
     public CredentialsConfig() throws IOException {
         map = getCredentials();
