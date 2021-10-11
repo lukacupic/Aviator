@@ -22,9 +22,14 @@ OPENSKY_PASSWORD=<OPENSKY_PASSWORD>
 
 GMAIL_USERNAME=<GMAIL_EMAIL>
 GMAIL_PASSWORD=<APP_PASSWORD>
+
+BOTTOM_LEFT_LATITUDE=<BOTTOM_LEFT_LATITUDE>
+BOTTOM_LEFT_LONGITUDE=<BOTTOM_LEFT_LONGITUDE>
+TOP_RIGHT_LATITUDE=<TOP_RIGHT_LATITUDE>
+TOP_RIGHT_LONGITUDE=<TOP_RIGHT_LONGITUDE>
 ```
 
-All the `<...>` values should be replaced with actual values. `<APP_PASSWORD>` is a security token generated from the Google account management dashboard.
+All the `<...>` values should be replaced with actual values. `<APP_PASSWORD>` is a security token generated from the Google account management dashboard. The tracked region is defined by providing bottom left and top right coordinates in terms of longitude and latitude.
 
 ### RUNNING
 
