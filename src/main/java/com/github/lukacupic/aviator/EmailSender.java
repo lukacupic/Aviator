@@ -6,10 +6,9 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class EmailSender {
-
-    private String to;
-    private String from;
-    private CredentialsConfig config;
+    private final String to;
+    private final String from;
+    private final CredentialsConfig config;
     private Properties properties;
 
     public EmailSender(String to, String from, CredentialsConfig config) {
@@ -33,7 +32,10 @@ public class EmailSender {
     public void send(String subject, String text) throws MessagingException {
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(config.getCredential(Credential.GMAIL_USERNAME), config.getCredential(Credential.GMAIL_PASSWORD));
+                return new PasswordAuthentication(
+                        config.getCredential(Credential.GMAIL_USERNAME),
+                        config.getCredential(Credential.GMAIL_PASSWORD)
+                );
             }
         });
 
