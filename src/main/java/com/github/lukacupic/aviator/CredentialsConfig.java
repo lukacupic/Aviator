@@ -1,4 +1,4 @@
-package com.github.lukacupic.openskydemo;
+package com.github.lukacupic.aviator;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.util.Properties;
 public class CredentialsConfig {
 
     private static final String FILE = "credentials.config";
-    private static final Credential[] CREDENTIALS = com.github.lukacupic.openskydemo.Credential.values();
+    private static final Credential[] CREDENTIALS = com.github.lukacupic.aviator.Credential.values();
 
     private final Map<String, String> map;
 
