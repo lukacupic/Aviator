@@ -1,10 +1,10 @@
-## OpenSkyDemo
+## Aviator
 
 A real-time airspace information tracker. The application sends real-time updates whenever an aeroplane enters a region pre-defined by GPS coordiates.
 
 ### SETUP
 
-OpenSky API is not yet on Maven Central. Thus, to use it, it needs to be installed locally:
+This application uses OpenSky. Since the OpenSky API is not yet on Maven Central, it needs to be installed locally:
 
 ```
 git clone https://github.com/openskynetwork/opensky-api.git
@@ -14,13 +14,13 @@ mvn install
 
 ### CONFIGURATION
 
-A credentials file called `credentials.config` should be manually added to the `src/main/resources` folder. The contents of the file should be as follows:
+A credentials file called `credentials.config` should be manually added to the `src/main/resources/` folder. The contents of the file should be as follows:
 
 ```
 OPENSKY_USERNAME=<OPENSKY_USERNAME>
 OPENSKY_PASSWORD=<OPENSKY_PASSWORD>
 
-GMAIL_USERNAME=<GMAIL_EMAIL>
+GMAIL_USERNAME=<GMAIL_EMAIL_ADDRESS>
 GMAIL_PASSWORD=<APP_PASSWORD>
 
 BOTTOM_LEFT_LATITUDE=<BOTTOM_LEFT_LATITUDE>
