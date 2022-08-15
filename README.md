@@ -4,7 +4,7 @@ A real-time airspace information tracker. The application sends real-time update
 
 ### SETUP
 
-This application uses OpenSky. Since the OpenSky API is not yet on Maven Central, it needs to be installed locally:
+This application uses OpenSky. Since the OpenSky API is not yet on Maven Central (as of August 2022), it needs to be installed locally:
 
 ```
 cd ~
