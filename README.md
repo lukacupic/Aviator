@@ -7,9 +7,11 @@ A real-time airspace information tracker. The application sends real-time update
 This application uses OpenSky. Since the OpenSky API is not yet on Maven Central, it needs to be installed locally:
 
 ```
+cd ~
 git clone https://github.com/openskynetwork/opensky-api.git
 cd opensky-api/java
 mvn install
+cd ../.. && rm -r opensky-api #Optional; remove the dowloaded repository
 ```
 
 ### CONFIGURATION
