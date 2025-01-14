@@ -1,6 +1,6 @@
 ## Aviator
 
-A real-time airspace information tracker. The application sends real-time updates whenever an aeroplane enters a region pre-defined by GPS coordiates.
+A real-time airspace information tracker. The application sends real-time updates via e-mail whenever an aeroplane enters a region pre-defined by GPS coordiates.
 
 ### SETUP
 
